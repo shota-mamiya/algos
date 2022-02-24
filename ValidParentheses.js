@@ -11,7 +11,7 @@ var isValid = function(s) {
 
     let stack = [] // creating new array to push the closing bracket and seeing if the next bracket matches the bracket at the end of array
 
-    if (s.length % 2 !== 0) return false;
+    if (s.length % 2 !== 0 || s.length < 2) return false;
 
     for (let i = 0; i < s.length; i++) {
         if (s[i] === "(") {
